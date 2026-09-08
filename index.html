@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChildColor — Projet culturel international consacré au regard que les enfants portent sur le monde qui les entoure.">
+  <meta name="theme-color" content="#202322">
+
+  <title>ChildColor — Culture visuelle et création artistique des enfants</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #202322;
+      --ink-soft: #454947;
+      --cream: #f4f1e9;
+      --paper: #faf9f5;
+      --white: #ffffff;
+      --gold: #b59a68;
+      --gold-light: #d7c7a4;
+      --line: rgba(32, 35, 34, 0.13);
+      --shadow: 0 30px 80px rgba(23, 27, 25, 0.12);
+      --radius: 2px;
+      --max-width: 1240px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+      background: var(--gold-light);
+      color: var(--ink);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ------------------------------
+       HEADER
+    ------------------------------ */
+
+    .site-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      color: var(--white);
+    }
+
+    .header-inner {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 28px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      display: grid;
+      place-items: center;
+      font-family: "Playfair Display", serif;
+      font-size: 17px;
+      border-radius: 50%;
+    }
+
+    .brand-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .header-label {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.75;
+    }
+
+    /* ------------------------------
+       HERO
+    ------------------------------ */
+
+    .hero {
+      position: relative;
+      min-height: 91vh;
+      min-height: 91svh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 78% 30%, rgba(181, 154, 104, 0.28), transparent 27%),
+        radial-gradient(circle at 22% 76%, rgba(255, 255, 255, 0.07), transparent 25%),
+        linear-gradient(125deg, #171a19 0%, #252a28 55%, #33332e 100%);
+      color: var(--white);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.13;
+      background-image:
+        linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+      pointer-events: none;
+    }
+
+    .hero-orbit {
+      position: absolute;
+      width: 48vw;
+      height: 48vw;
+      max-width: 700px;
+      max-height: 700px;
+      right: -8vw;
+      top: 13%;
+      border: 1px solid rgba(215, 199, 164, 0.3);
+      border-radius: 50%;
+    }
+
+    .hero-orbit::after {
+      content: "";
+      position: absolute;
+      inset: 13%;
+      border: 1px solid rgba(215, 199, 164, 0.16);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 150px 0 105px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 26px;
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .hero h1 {
+      max-width: 1000px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(52px, 8vw, 112px);
+      font-weight: 400;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-style: normal;
+    }
+
+    .hero-bottom {
+      margin-top: 58px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-intro {
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .hero-number {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      color: rgba(255,255,255,.45);
+      white-space: nowrap;
+    }
+
+    /* ------------------------------
+       INTRO / MANIFESTO
+    ------------------------------ */
+
+    .intro {
+      padding: 130px 0;
+      background: var(--cream);
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.7fr 1.7fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .section-label {
+      padding-top: 9px;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .intro-lead {
+      max-width: 900px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(30px, 4vw, 53px);
+      line-height: 1.17;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    .intro-lead span {
+      color: var(--gold);
+    }
+
+    /* ------------------------------
+       CONTENT
+    ------------------------------ */
+
+    .content {
+      padding: 120px 0 140px;
+      background: var(--paper);
+    }
+
+    .content-heading {
+      max-width: 680px;
+      margin-left: auto;
+      margin-bottom: 85px;
+    }
+
+    .content-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 5vw, 68px);
+      line-height: 1.08;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+    }
+
+    .content-heading p {
+      margin-top: 25px;
+      color: var(--ink-soft);
+      max-width: 580px;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .story-card {
+      position: relative;
+      min-height: 310px;
+      padding: 48px;
+      background: var(--paper);
+      transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+    }
+
+    .story-card:hover {
+      background: var(--white);
+      transform: translateY(-4px);
+    }
+
+    .story-card::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 2px;
+      margin-bottom: 35px;
+      background: var(--gold);
+    }
+
+    .story-number {
+      position: absolute;
+      top: 42px;
+      right: 45px;
+      color: rgba(32, 35, 34, 0.25);
+      font-family: "Playfair Display", serif;
+      font-size: 14px;
+    }
+
+    .story-card h3 {
+      margin-bottom: 17px;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .story-card p {
+      max-width: 480px;
+      color: var(--ink-soft);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* ------------------------------
+       STATEMENT
+    ------------------------------ */
+
+    .statement {
+      position: relative;
+      padding: 145px 0;
+      overflow: hidden;
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .statement::before {
+      content: "CC";
+      position: absolute;
+      right: -20px;
+      top: -70px;
+      color: rgba(255,255,255,.025);
+      font-family: "Playfair Display", serif;
+      font-size: min(45vw, 620px);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .statement-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+    }
+
+    .statement .section-label {
+      margin-bottom: 34px;
+    }
+
+    .statement h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 5.6vw, 78px);
+      font-weight: 400;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .statement h2 em {
+      color: var(--gold-light);
+      font-style: normal;
+    }
+
+    /* ------------------------------
+       ACTIVITIES
+    ------------------------------ */
+
+    .activities {
+      padding: 125px 0;
+      background: var(--cream);
+    }
+
+    .activities-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 50px;
+      margin-bottom: 65px;
+    }
+
+    .activities-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 5vw, 65px);
+      line-height: 1.05;
+      font-weight: 400;
+    }
+
+    .activities-header p {
+      max-width: 430px;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    .activity-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .activity {
+      display: grid;
+      grid-template-columns: 90px 1fr 40px;
+      align-items: center;
+      gap: 30px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+      transition: padding 0.3s ease;
+    }
+
+    .activity:hover {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .activity-index {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: .12em;
+    }
+
+    .activity-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(23px, 3vw, 34px);
+    }
+
+    .activity-arrow {
+      color: var(--gold);
+      font-size: 20px;
+      text-align: right;
+      transition: transform .3s ease;
+    }
+
+    .activity:hover .activity-arrow {
+      transform: translateX(6px);
+    }
+
+    /* ------------------------------
+       CTA
+    ------------------------------ */
+
+    .cta {
+      padding: 125px 0;
+      background: var(--paper);
+      text-align: center;
+    }
+
+    .cta-inner {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .cta .section-label {
+      margin-bottom: 28px;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: -0.04em;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 28px auto 0;
+      color: var(--ink-soft);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 42px;
+      padding: 16px 25px;
+      border: 1px solid var(--ink);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+    }
+
+    .cta-button:hover {
+      background: var(--ink);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .cta-button span {
+      color: var(--gold);
+      font-size: 17px;
+    }
+
+    /* ------------------------------
+       FOOTER
+    ------------------------------ */
+
+    .site-footer {
+      background: #171a19;
+      color: var(--white);
+    }
+
+    .footer-main {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 82px 0 72px;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 80px;
+      border-bottom: 1px solid rgba(255,255,255,.13);
+    }
+
+    .footer-brand h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .footer-brand p {
+      max-width: 430px;
+      margin-top: 25px;
+      color: rgba(255,255,255,.55);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 45px;
+    }
+
+    .footer-org {
+      color: rgba(255,255,255,.45);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .19em;
+      line-height: 1.8;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 17px;
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.86);
+      font-size: 14px;
+      transition: color .25s ease, padding .25s ease;
+    }
+
+    .footer-link:hover {
+      padding-left: 8px;
+      color: var(--gold-light);
+    }
+
+    .footer-link small {
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+      padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255,255,255,.34);
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* ------------------------------
+       RESPONSIVE
+    ------------------------------ */
+
+    @media (max-width: 900px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .content-heading {
+        margin-left: 0;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner,
+      .hero-content,
+      .container,
+      .footer-main,
+      .footer-bottom {
+        width: min(100% - 36px, var(--max-width));
+      }
+
+      .header-inner {
+        padding: 21px 0;
+      }
+
+      .header-label {
+        display: none;
+      }
+
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+      }
+
+      .brand-name {
+        font-size: 11px;
+      }
+
+      .hero {
+        min-height: 88svh;
+      }
+
+      .hero-content {
+        padding: 125px 0 65px;
+      }
+
+      .hero-orbit {
+        width: 100vw;
+        height: 100vw;
+        right: -50vw;
+        top: 20%;
+      }
+
+      .hero-bottom {
+        margin-top: 38px;
+        display: block;
+      }
+
+      .hero-intro {
+        font-size: 15px;
+      }
+
+      .hero-number {
+        display: none;
+      }
+
+      .intro,
+      .content,
+      .activities,
+      .cta {
+        padding: 85px 0;
+      }
+
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-card {
+        min-height: auto;
+        padding: 38px 28px;
+      }
+
+      .story-number {
+        top: 32px;
+        right: 28px;
+      }
+
+      .statement {
+        padding: 90px 0;
+      }
+
+      .activities-header {
+        display: block;
+        margin-bottom: 45px;
+      }
+
+      .activities-header p {
+        margin-top: 25px;
+      }
+
+      .activity {
+        grid-template-columns: 42px 1fr 25px;
+        gap: 15px;
+        padding: 25px 0;
+      }
+
+      .activity:hover {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .footer-main {
+        width: min(100% - 36px, var(--max-width));
+        padding: 65px 0 55px;
+      }
+
+      .footer-bottom {
+        width: min(100% - 36px, var(--max-width));
+        padding: 22px 0;
+        display: block;
+      }
+
+      .footer-bottom span {
+        display: block;
+      }
+
+      .footer-bottom span + span {
+        margin-top: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://childcolor.eu/" aria-label="ChildColor — Accueil">
+        <span class="brand-mark">C</span>
+        <span class="brand-name">ChildColor</span>
+      </a>
+
+      <span class="header-label">Projet international · Culture visuelle</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-orbit" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">Culture visuelle contemporaine</div>
+
+        <h1>
+          Le monde<br>
+          <em>vu par les enfants.</em>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-intro">
+            Un projet culturel international consacré au regard que les enfants
+            portent sur le monde qui les entoure, à travers leurs dessins,
+            leurs peintures et leurs créations.
+          </p>
+
+          <span class="hero-number">01 / 06</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="container intro-grid">
+        <div class="section-label">Le projet</div>
+
+        <div>
+          <p class="intro-lead">
+            ChildColor rassemble des créations d’enfants de différents pays
+            pour leur donner une place dans
+            <span>l’espace culturel contemporain.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content">
+      <div class="container">
+
+        <div class="content-heading">
+          <div class="section-label">Regards & territoires</div>
+
+          <h2>
+            Chaque enfance possède son propre langage visuel.
+          </h2>
+
+          <p>
+            Chaque enfant grandit dans un contexte particulier. La famille,
+            le lieu de vie, la nature, l’école, les traditions et la culture
+            qui l’entourent peuvent apparaître dans ses créations.
+          </p>
+        </div>
+
+        <div class="story-grid">
+
+          <article class="story-card">
+            <span class="story-number">01</span>
+            <h3>Des expériences singulières</h3>
+            <p>
+              Les œuvres témoignent des expériences, de l’environnement,
+              de l’imagination et de la manière personnelle dont chaque
+              enfant représente ce qu’il connaît et ce qu’il découvre.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-number">02</span>
+            <h3>Une voix derrière l’image</h3>
+            <p>
+              Lorsque cela est possible, les œuvres sont accompagnées de
+              quelques mots de leur auteur afin de préserver le lien entre
+              l’image et son regard personnel.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-number">03</span>
+            <h3>Des cultures en dialogue</h3>
+            <p>
+              La présentation d’œuvres provenant de différents pays révèle
+              des univers variés et fait apparaître des thèmes communs à
+              travers les expériences de l’enfance.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="story-number">04</span>
+            <h3>Des thèmes profondément humains</h3>
+            <p>
+              La famille, l’amitié, la nature, les rêves, la vie quotidienne
+              ou encore l’avenir prennent des formes différentes tout en
+              restant des expériences profondément humaines.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="container">
+        <div class="statement-inner">
+          <div class="section-label">Notre intention</div>
+
+          <h2>
+            Conserver une trace de la création visuelle des enfants et créer
+            un espace où leurs <em>regards peuvent être découverts,
+            partagés et mis en relation.</em>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="activities">
+      <div class="container">
+
+        <div class="activities-header">
+          <h2>
+            Une collection<br>
+            <i>vivante.</i>
+          </h2>
+
+          <p>
+            ChildColor développe une collection numérique accessible en ligne
+            et imagine différents formats pour faire circuler les créations,
+            les regards et les échanges.
+          </p>
+        </div>
+
+        <div class="activity-list">
+
+          <div class="activity">
+            <span class="activity-index">01</span>
+            <span class="activity-title">Collection numérique</span>
+            <span class="activity-arrow">↗</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-index">02</span>
+            <span class="activity-title">Présentations & expositions</span>
+            <span class="activity-arrow">↗</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-index">03</span>
+            <span class="activity-title">Activités artistiques</span>
+            <span class="activity-arrow">↗</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-index">04</span>
+            <span class="activity-title">Projets éducatifs</span>
+            <span class="activity-arrow">↗</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-index">05</span>
+            <span class="activity-title">Partenariats culturels</span>
+            <span class="activity-arrow">↗</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-inner">
+
+          <div class="section-label">ChildColor</div>
+
+          <h2>
+            Donner une place<br>
+            aux regards de l’enfance.
+          </h2>
+
+          <p>
+            Un espace ouvert à la création, à la découverte et au dialogue
+            entre les enfants, les familles, les établissements scolaires,
+            les associations et les partenaires culturels.
+          </p>
+
+          <a class="cta-button" href="mailto:contact@nvo987.fr">
+            Nous contacter
+            <span>↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <h2>ChildColor</h2>
+
+        <p>
+          Projet culturel international consacré à la culture visuelle
+          et à la création artistique des enfants.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+
+        <div class="footer-org">
+          NVO987<br>
+          Culture Visuelle Moderne et Contemporaine
+        </div>
+
+        <nav class="footer-links" aria-label="Liens de contact">
+
+          <a
+            class="footer-link"
+            href="mailto:contact@nvo987.fr"
+            aria-label="Envoyer un email à contact@nvo987.fr"
+          >
+            <span>contact@nvo987.fr</span>
+            <small>Email ↗</small>
+          </a>
+
+          <a
+            class="footer-link"
+            href="did:web:identity.nvo987.us"
+            aria-label="Identité did:web identity.nvo987.us"
+          >
+            <span>identity.nvo987.us</span>
+            <small>did:web ↗</small>
+          </a>
+
+          <a
+            class="footer-link"
+            href="https://www.nvo987.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visiter www.nvo987.fr"
+          >
+            <span>www.nvo987.fr</span>
+            <small>Website ↗</small>
+          </a>
+
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NVO987 — Culture Visuelle Moderne et Contemporaine</span>
+      <span>ChildColor · Tous droits réservés</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
