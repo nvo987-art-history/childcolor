@@ -1,0 +1,22 @@
+/* TEAM */
+
+Project: ChildColor
+Description: International cultural programme dedicated to children's
+visual culture and artistic creation.
+Associated organization: NVO987 – Culture Visuelle Moderne et Contemporaine
+Website: https://childcolor.eu/
+Organization website: https://www.nvo987.fr/
+Contact: contact@nvo987.fr
+
+/* SITE */
+
+Site name: ChildColor
+Primary language: French
+Canonical URL: https://childcolor.eu/
+Technology: HTML5, CSS3
+Fonts: DM Sans, Playfair Display
+Font provider: Google Fonts
+Structured data: Schema.org JSON-LD
+Social metadata: Open Graph, Twitter Cards
+Identity reference: https://identity.nvo987.us/
+Copyright: © 2026 NVO987
