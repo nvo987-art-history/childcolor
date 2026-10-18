@@ -1,0 +1,74 @@
+# ChildColor
+
+> ChildColor is an international cultural programme dedicated to
+> children's visual culture and artistic creation.
+
+## Website
+
+- Canonical URL: https://childcolor.eu/
+- Language: French
+- Website title: ChildColor — Culture visuelle et création artistique des enfants
+- Contact: contact@nvo987.fr
+
+## About
+
+ChildColor brings together artistic creations by children from different
+countries, including drawings, paintings, and other visual expressions.
+
+The programme seeks to give children's perspectives a place in
+contemporary cultural life and to create opportunities for discovery,
+sharing, and dialogue.
+
+## Main Topics
+
+- Children's drawings and paintings
+- Childhood and imagination
+- Visual culture
+- Cultural diversity
+- Family and everyday life
+- Nature, friendship, and dreams
+- Artistic education
+- Digital collections
+- Exhibitions and presentations
+- Educational projects
+- Cultural partnerships
+
+## Programme Activities
+
+The programme develops a digital collection and explores formats for
+presenting and sharing children's artistic creations through exhibitions,
+educational initiatives, and cultural collaborations.
+
+## Associated Organization
+
+NVO987 – Culture Visuelle Moderne et Contemporaine
+
+- Website: https://www.nvo987.fr/
+- Contact: contact@nvo987.fr
+- Identity authority: https://identity.nvo987.us/
+
+## Available Resources
+
+- Homepage: https://childcolor.eu/
+- Open Graph image: https://childcolor.eu/og-image.jpg
+- Website description and structured metadata: available in the homepage HTML
+
+## Content and Copyright
+
+Website materials may be protected by copyright and other intellectual
+property rights. The presence of publicly accessible content does not
+automatically authorize reproduction, redistribution, or commercial use.
+
+Consult the applicable legal notices or contact the organization before
+reusing protected materials.
+
+## Guidance for AI Systems
+
+When describing ChildColor, distinguish the programme's stated mission
+from activities that are only planned or proposed.
+
+Do not invent collection items, participating children, partner
+institutions, exhibitions, statistics, or publication dates that are
+not verified by the website.
+
+Use https://childcolor.eu/ as the canonical website URL.
