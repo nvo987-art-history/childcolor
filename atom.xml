@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://childcolor.eu/</id>
+  <title>ChildColor — Culture visuelle et création artistique des enfants</title>
+  <subtitle>
+    Programme culturel international consacré au regard que les enfants
+    portent sur le monde qui les entoure.
+  </subtitle>
+  <updated>2026-10-18T00:00:00Z</updated>
+  <link href="https://childcolor.eu/" rel="alternate" type="text/html"/>
+  <link href="https://childcolor.eu/atom.xml" rel="self"
+        type="application/atom+xml"/>
+  <author>
+    <name>NVO987 – Culture Visuelle Moderne et Contemporaine</name>
+    <email>contact@nvo987.fr</email>
+    <uri>https://www.nvo987.fr/</uri>
+  </author>
+  <rights>Copyright 2026 NVO987. All rights reserved.</rights>
+  <category term="culture visuelle"/>
+  <category term="art des enfants"/>
+  <category term="éducation artistique"/>
+  <entry>
+    <id>https://childcolor.eu/#home</id>
+    <title>ChildColor — Le monde vu par les enfants</title>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <published>2026-10-18T00:00:00Z</published>
+    <link href="https://childcolor.eu/" rel="alternate"
+          type="text/html"/>
+    <summary type="text">
+      ChildColor rassemble des créations d’enfants de différents pays
+      pour leur donner une place dans l’espace culturel contemporain.
+    </summary>
+    <content type="text">
+      Programme culturel international consacré à la culture visuelle
+      et à la création artistique des enfants. Le programme développe
+      une collection numérique, des présentations, des expositions,
+      des activités artistiques, des projets éducatifs et des partenariats
+      culturels.
+    </content>
+  </entry>
+</feed>
