@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <foaf:Document rdf:about="https://childcolor.eu/foaf.xml">
+    <dc:title>ChildColor FOAF Profile</dc:title>
+    <dc:language>fr</dc:language>
+    <dc:description>
+      Semantic description of ChildColor and its associated cultural
+      organization.
+    </dc:description>
+  </foaf:Document>
+
+  <foaf:Organization rdf:about="https://www.nvo987.fr/">
+    <foaf:name>
+      NVO987 – Culture Visuelle Moderne et Contemporaine
+    </foaf:name>
+    <foaf:homepage rdf:resource="https://www.nvo987.fr/"/>
+    <foaf:mbox rdf:resource="mailto:contact@nvo987.fr"/>
+    <foaf:weblog rdf:resource="https://childcolor.eu/"/>
+  </foaf:Organization>
+
+  <foaf:Project rdf:about="https://childcolor.eu/">
+    <foaf:name>ChildColor</foaf:name>
+    <foaf:homepage rdf:resource="https://childcolor.eu/"/>
+    <foaf:page rdf:resource="https://childcolor.eu/"/>
+    <dc:description>
+      Programme culturel international consacré au regard que les enfants
+      portent sur le monde qui les entoure, à travers leurs dessins,
+      leurs peintures et leurs créations.
+    </dc:description>
+    <dc:language>fr</dc:language>
+    <dc:subject>Children's art</dc:subject>
+    <dc:subject>Visual culture</dc:subject>
+    <dc:subject>Artistic education</dc:subject>
+    <foaf:maker rdf:resource="https://www.nvo987.fr/"/>
+  </foaf:Project>
+
+</rdf:RDF>
