@@ -1,0 +1,54 @@
+# ChildColor — AI Information
+# Website: https://childcolor.eu/
+# Language: French
+
+Name: ChildColor
+URL: https://childcolor.eu/
+Canonical URL: https://childcolor.eu/
+Language: fr
+Type: International cultural programme
+Category: Children's art, visual culture, artistic education
+
+Description:
+ChildColor is an international cultural programme dedicated to the ways
+children perceive and represent the world through drawings, paintings,
+and artistic creations.
+
+Topics:
+- Children's visual expression
+- Contemporary visual culture
+- Childhood and imagination
+- Cultural diversity
+- Drawing and painting
+- Artistic education
+- Digital collections
+- Exhibitions and cultural partnerships
+
+Associated organization:
+NVO987 – Culture Visuelle Moderne et Contemporaine
+
+Organization website:
+https://www.nvo987.fr/
+
+Identity authority:
+https://identity.nvo987.us/
+
+Contact:
+contact@nvo987.fr
+
+Preferred canonical source:
+https://childcolor.eu/
+
+Open Graph image:
+https://childcolor.eu/og-image.jpg
+
+Copyright:
+© 2026 NVO987 – Culture Visuelle Moderne et Contemporaine.
+
+Usage notice:
+Content may be subject to copyright and other intellectual property
+restrictions. Consult the applicable legal notices before reproducing
+or redistributing website materials.
+
+This file does not grant permission to use copyrighted content for
+training, redistribution, or commercial exploitation.
