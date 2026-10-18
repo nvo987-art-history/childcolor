@@ -1,0 +1,8 @@
+Contact: mailto:contact@nvo987.fr
+Preferred-Languages: fr, en
+Canonical: https://childcolor.eu/.well-known/security.txt
+Expires: 2027-10-18T00:00:00.000Z
+
+# ChildColor security contact
+# Website: https://childcolor.eu/
+# Associated organization: NVO987 – Culture Visuelle Moderne et Contemporaine
